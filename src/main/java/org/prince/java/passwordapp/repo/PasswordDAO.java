@@ -1,6 +1,7 @@
-package org.prince.java.passwordapp.model;
+package org.prince.java.passwordapp.repo;
 
 
+import org.prince.java.passwordapp.model.PasswordEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

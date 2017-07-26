@@ -1,7 +1,8 @@
 package org.prince.java.passwordapp.helper;
 
 
-import model.data.PasswordDAO;
+
+import org.prince.java.passwordapp.repo.PasswordDAO;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -19,7 +20,7 @@ public class PasswordsPersistent {
     private List loadData(){
         List<String> list = null;
         try {
-            list = Files.readAllLines(Paths.get("/Users/davidprince/Desktop/Password Security WebApp/Password Security WebApp/src/main/java/helper/passwords.txt"), StandardCharsets.UTF_8);
+            list = Files.readAllLines(Paths.get("org/prince/java/passwordapp/helper/passwords.txt"), StandardCharsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();
 
