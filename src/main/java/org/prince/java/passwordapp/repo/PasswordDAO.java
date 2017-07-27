@@ -13,6 +13,5 @@ import javax.transaction.Transactional;
 @Transactional
 @Repository
 public interface PasswordDAO extends CrudRepository<PasswordEntity, Integer> {
-
     PasswordEntity findByPassword(String password);
 }
