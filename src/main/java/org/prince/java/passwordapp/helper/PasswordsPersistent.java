@@ -37,4 +37,12 @@ public class PasswordsPersistent {
         PasswordsPersistent pp = new PasswordsPersistent();
         pp.exportsToDB();
     }
+
+    public PasswordDAO getPasswordDAO() {
+        return passwordDAO;
+    }
+
+    public void setPasswordDAO(PasswordDAO passwordDAO) {
+        this.passwordDAO = passwordDAO;
+    }
 }
